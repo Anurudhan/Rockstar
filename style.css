@@ -1,0 +1,377 @@
+body{
+    background-color: black;
+}
+header{
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  width: 100%;
+}
+.navbar{
+  color: white;
+  border: #ffffff;
+}
+#mySidenav{
+    background-color: black;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    margin-left: 10%;
+    text-decoration: none;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color:white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1b614;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav a{
+    display: flex;
+  }
+  .sidenav img{
+    display: flex;
+  }
+
+  #searchform{
+    width: 70%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+  }
+  #searchbargames{
+    background-color: transparent;
+    border: 0px;
+    font-size: medium;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #searchbargames:focus{
+    outline: none;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 17px;}
+    .sidenav a {font-size: 12px;}
+  }
+  .logo{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-left: -29px;
+    cursor: pointer;
+  }
+/* Dropdown Buttons */
+
+.dropdown-menu .dropdown-item {
+  font-size: 16px;
+  width: 190px;
+  height: 45px;
+}
+
+.dropdown-menu .dropdown-item img {
+  float: right;
+  margin-left: 10px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgb(51, 51, 51);
+}
+.dropdown-button {
+  background-color: black;
+  color: white;
+  padding: 22px;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.dropdown-button:hover {
+  background-color: rgb(128, 128, 128);
+  transition: 1s;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 50px;
+  right: 0;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-right:0;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+  }
+/* First section*/
+section{
+    background-color: black;
+  }
+.first-section{
+     padding-left: 5%;
+  }
+  
+.first-section p{
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+.now-on{
+    font-size: 2.6rem;
+    color: white;
+  }
+.watch-now-btn{
+  width: 250px;
+  height: 60px;
+  margin-top: 20px;
+  color: white;
+  font-weight: 700;
+  line-height: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.watch-now-btn a{
+  text-decoration: none;
+  color: white;
+}
+.watch-now-btn:hover{
+  background-color: #f1b614;
+  color:black;
+  border: black;
+}
+.watch-now-btn a:hover{
+  text-decoration: none;
+  color:black;
+}
+  /*second section*/
+  h5{
+    font-size: 1.25rem;
+  }
+  .card-body h6{
+    color: grey;
+    font-size: 12px;
+  }
+  .card-text{
+    font-size: 25px;
+
+  }
+  h4 h5 h6{
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .btn{
+    color: #ffffff;
+    background-color: black;
+  }
+  .view-btn .btn{
+    border-bottom: 4px solid rgb(252, 175, 23);
+    border-radius: 7px;
+  }
+  .btn:hover{
+    background-color: rgb(252, 175, 23);
+    color: black;
+  }
+/* <End Of Section Part-2> */
+/* <Footer> */
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Media query for screens with a maximum width of 800px */
+@media (max-width: 800px) {
+  .col-12.mt-4.pt-4.pb-4 .container {
+      font-size: 12px;
+  }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  .col-12.mt-4.pt-4.pb-4 .container {
+      font-size: 9px;
+  }
+}
+
+/* Media query for screens with a maximum width of 400px */
+@media (max-width: 400px) {
+  .col-12.mt-4.pt-4.pb-4 .container {
+      font-size: 7px;
+  }
+}
+
+/* Media query for screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .footer-links.align-items-sm-center {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+
+.footer-links li {
+  display: inline;
+  margin-right: 30px;
+  color: #cecece;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+.footer-links li:hover {
+  color: rgb(255, 172, 0);
+  transition: 0.5s;
+}
+
+
+.links {
+  font-size: 20px !important;
+}
+
+/* Media query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+  .links {
+      font-size: 16px !important;
+  }
+}
+
+/* Media query for screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .d-flex.flex-column.justify-content-start.align-items-sm-end {
+      align-items: flex-start;
+  }
+}
+
+/* Style for footer icons */
+.footer-icons {
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out !important;
+}
+.footer-icons:hover {
+  opacity: 0.3;
+  transition: 1s;
+}
+
+/* Media query for screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .footer-icons {
+      margin-right: 20px;
+      margin-bottom: 10px;
+  }
+}
+
+.links-2 {
+  font-size: 10px;
+  color: #808080;
+}
+
+/* Media query for screens with a maximum width of 800px */
+@media (max-width: 800px) {
+  .col-12.mt-4.pt-4.pb-4 .container {
+      font-size: 12px;
+  }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  .col-12.mt-4.pt-4.pb-4 .container {
+      font-size: 9px;
+  }
+}
+
+/* Media query for screens with a maximum width of 400px */
+@media (max-width: 400px) {
+  .col-12.mt-4.pt-4.pb-4 .container {
+      font-size: 7px;
+  }
+}
+
+
+.footer-2-line:hover {
+  opacity: 0.3;
+}
+
+.rklink {
+  text-decoration: none;
+}
+
+.links:hover {
+  color: rgb(252, 175, 23);
+  transition: 1s;
+}
+
+/* < End Of Footer> */
+
+
